@@ -1,1 +1,1 @@
-﻿Console.WriteLine(System.Console.WriteLine("Applicazione .NET Core 6 avviata con successo."););
+﻿Console.WriteLine($"Commit Hash: {args[0]}");
