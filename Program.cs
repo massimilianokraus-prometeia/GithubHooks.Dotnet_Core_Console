@@ -2,7 +2,7 @@
 
 class Program
 {
-    static string Main(string[] args) {
+    static void Main(string[] args) {
         Console.WriteLine($".NET Core App Started \n - Pull Request Title: {args[0]} \n - Pull Request Body: {args[1]}");
         // Console.WriteLine(GetJiraIssue(args[0]));
         return GetJiraIssue(args[0]);
