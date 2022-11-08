@@ -1,0 +1,21 @@
+name: Save Artifacts
+
+on:
+    release:
+    types: [created]
+    
+jobs:
+  save:
+
+    runs-on: windows-latest 
+    steps:
+    - uses: actions/checkout@v3
+    - name: Create temp folder for store artifacts
+      run: mkdir downloads
+    - name: Publish App
+      run: dotnet publish -o ./downloads
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: publish-artifact
+        path: ./downloads
