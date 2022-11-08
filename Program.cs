@@ -3,8 +3,9 @@ using System.Text.RegularExpressions;
 class Program
 {
     static void Main(string[] args) {
-        Console.WriteLine($".NET Core App Started \n - Pull Request Title: {args[0]} \n - Pull Request Body: {args[1]}");
-        Console.WriteLine("ISSUE JIRA: " + GetJiraIssue(args[0]));
+//         Console.WriteLine($".NET Core App Started \n - Pull Request Title: {args[0]} \n - Pull Request Body: {args[1]}");
+//         Console.WriteLine("ISSUE JIRA: " + GetJiraIssue(args[0]));
+        Console.WriteLine("Prova avvio");
     }
 
     static string GetJiraIssue(string message) {
