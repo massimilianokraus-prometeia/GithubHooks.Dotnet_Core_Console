@@ -19,3 +19,8 @@ jobs:
       with:
         name: console-app-artifacts
         path: ./downloads
+    - name: Upload artifacts 2
+      uses: actions/upload-artifact@v2
+      with:
+        name: console-app-artifacts-2
+        path: ./downloads
